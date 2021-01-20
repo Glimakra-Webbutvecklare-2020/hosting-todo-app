@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 2rem auto;
+    width: 33%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, #f6d353, #f8a100);
+}
+
+header {
+    margin: 1rem;
+    font-size: 1.6rem;
+    text-decoration: 4px underline;
+}
+
+form {
+    width: 100%;
+    display: flex;
+}
+
+.todo-button {
+    width: 10%;
+    background: lightgreen;
+    border: 2px solid black;
+    font-size: 2rem;
+    color: white;
+}
+
+.todo-input {
+    margin: 0 auto;
+    padding: 0.75rem;
+    font-size: 1.6rem;
+    margin-right: 8px;
+    width: 90%;
+    border: 2px solid black;
+    outline: none;
+}
+
+.todo-list {
+    margin: 0 auto;
+    width: 100%;
+    list-style: none;
+}
+
+.todo-item-container {
+    display: flex;
+    width: 100%;
+}
+
+/* wrapper around text and remove */
+.todo-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Actuall text */
+.todo-text {
+    background-color: lightblue;
+    margin-right: 8px;
+    width: 90%;
+    padding: 0.5rem;
+    border: 2px solid black;
+}
+
+/* remove element */
+.todo-remove {
+    background-color: pink;
+    margin: 0.5rem 0rem;
+    width: 10%;
+    font-size: 1.7rem;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.todo-button:hover {
+    background-color: white;
+    color: lightgreen;
+    cursor: pointer;
+}
+
+.todo-remove:hover {
+    background-color: black;
+    color: pink;
+    cursor: pointer;
+}
